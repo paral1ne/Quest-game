@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: brown;
+  /* Высота полность в размер окна */
+  height: 95vh;
+}
+
+.body__container {
+  margin: 10px auto;
+  width: 90%;
+  max-width: 1280px;
+  background-color: bisque;
+  padding: 10px;
+  height: 100%;
+}
+
+main {
+  background-color: brown;
+  display: flex;
+  justify-content: space-between;
+  height: inherit;
+}
+.text {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.2rem;
+  letter-spacing: 0.1em;
+}
+section {
+  background-color: burlywood;
+  width: 65%;
+  height: inherit;
+  padding: 0 15px;
+  .text__window {
+    padding: 10px;
+    background-color: crimson;
+    height: 65%;
+    display: flex;
+    gap: 15px;
+  }
+  .dessisions__window {
+    padding-left: 20px;
+    ol {
+      margin: 15px 5px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    ol li:hover {
+      cursor: pointer;
+      text-decoration: underline;
+      color: grey;
+    }
+  }
+}
+aside {
+  background-color: chocolate;
+  width: 30%;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  .picture__window {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 95%;
+      height: 95%;
+      object-fit: contain;
+    }
+  }
+  .status__window {
+    padding: 0 15px;
+    height: 50%;
+  }
+}
